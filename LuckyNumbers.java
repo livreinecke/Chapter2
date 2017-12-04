@@ -1,33 +1,27 @@
 
-/**
- * Write a description of class LuckyNumbers here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+// **************************************************
+//   LuckyNumbers.java
+//
+//   To generate two random "lucky" numbers
+// **************************************************
+ 
+import java.util.Random;
+ 
 public class LuckyNumbers
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class LuckyNumbers
-     */
-    public LuckyNumbers()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+   public static void main (String[] args)
+   {
+          Random generator = new Random();
+          int lucky1, lucky2; 
+ 
+          // Generate lucky1 (a random integer between 50 and 79) using the nextInt method
+ 
+          lucky1 = generator.nextInt(20) + 50;
+ 
+          // Generate lucky2 (a random integer between 11 and 30) using nextFloat
+ 
+          lucky2 = (int) (generator.nextFloat() * 20)+11;
+ 
+          System.out.println ("Your lucky numbers are " + lucky1 + " and " + lucky2);
+        }
 }

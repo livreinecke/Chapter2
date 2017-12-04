@@ -15,18 +15,14 @@ public class RightTriangle
           double hypotenuse;        // length of the hypotenuse
  
           // Get the lengths of the sides as input
-        System.out.print ("Please enter the length of the side of a right triangle");
+          System.out.print ("Please enter the length of the side of a right triangle");
         side1 = keyboard.nextDouble();
-        System.out.print ("Please enter the length of the side of a right triangle");
-        side2 = keyboard.nextDouble();
-     
- 
-          // Compute the length of the hypotenuse
-        hypotenuse = Math.sqrt(Math.pow(side1,2) + Math.pow(side2,2));
-     
- 
+          System.out.print("Please enter the length of the second side of a right triangle");
+        side2 = keyboard.nextDouble();  
+        hypotenuse = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
+        
+       
           // Print the result
           System.out.println ("Length of the hypotenuse: " + hypotenuse);
         }
 }
- 

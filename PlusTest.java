@@ -1,33 +1,31 @@
-
 /**
  * Write a description of class PlusTest here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class PlusTest
-{
-    // instance variables - replace the example below with your own
-    private int x;
 
     /**
      * Constructor for objects of class PlusTest
      */
-    public PlusTest()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    public class PlusTest
+{
+        // -------------------------------------------------
+        // main prints some expressions using the + operator
+        // -------------------------------------------------
+        public static void main (String[] args)
+        {
+         System.out.println ("This is a long string that is the " +
+                                 "concatenation of two shorter strings."); 
+         //This is a long string that is the concatenation of two shorter strings.
+         System.out.println ("The first computer was invented about" + 55 +
+                                 "years ago.");
+         //The first computer was invented about55years ago.
+         System.out.println ("8 plus 5 is " + 8 + 5);
+         //8 plus 5 is 85
+         System.out.println ("8 plus 5 is " + (8 + 5));
+         //8 plus 5 is 13
+         System.out.println (8 + 5 + " equals 8 plus 5.");
+         //13 equals 8 plus 5
+        }
 }

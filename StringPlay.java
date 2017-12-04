@@ -1,33 +1,29 @@
-
-/**
- * Write a description of class StringPlay here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+// **************************************************
+//   StringPlay.java
+//
+//   Play with String objects
+// **************************************************
 public class StringPlay
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class StringPlay
-     */
-    public StringPlay()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+   public static void main (String[] args)
+   {   
+       String college = new String ("PoDunk College");
+ 
+      String town = "Anytown, USA"; // part (a)
+ 
+          int stringLength = town.length();
+          String change1, change2, change3;
+ 
+      System.out.println (college.length()); // part (b)
+ 
+          System.out.println (college + " contains " + stringLength + " characters.");
+          
+          change1 = college.toUpperCase(); // part (c)
+ 
+          change2 = change1.replace("O","*"); // part (d)
+ 
+          change3 = change2.concat(town); // part (e)
+ 
+          System.out.println ("The final string is " + change3);
+        }
 }

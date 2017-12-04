@@ -1,33 +1,25 @@
 
+
 /**
  * Write a description of class RollingDice here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
+import java.util.Random;
+ 
 public class RollingDice
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class RollingDice
-     */
-    public RollingDice()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+   public static void main (String[] args)
+   {
+          Random generator = new Random();
+          int dice1, dice2; 
+ 
+          dice1 = generator.nextInt(7) + 1;
+ 
+          dice2 = generator.nextInt(7) + 1;
+ 
+          System.out.println ("You rolled a " + dice1 + " and " + dice2);
+          System.out.println("The sum is " + (dice1 + dice2)); 
+        }
 }
